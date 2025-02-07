@@ -1,0 +1,234 @@
+<!-- Desenvolvedor Front-end Isaac Ikawa -->
+<!-- Projeto Blog pessoal - Artes Marciais -->
+
+<!DOCTYPE html> <!-- É usada para informar ao navegador que o documento é escrito em HTML5. Serve para Compatibilidade do Navegador, Padrões Web e SEO e Acessibilidade. -->
+<html lang="pt-BR"> <!-- Especifica o idioma principal do conteúdo da página. Nesse caso o pt-BR o idioma é definido como português do Brasil. -->
+<head> <!-- contém metadados e links para recursos essenciais para a página, como estilos e scripts. -->
+    <meta charset="UTF-8"> <!-- define a codificação de caracteres do documento HTML como UTF-8, garantindo que caracteres especiais sejam exibidos corretamente. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Serve para força o Internet Explorer a usar o modo mais recente de renderização, garantindo melhor compatibilidade. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsivo --> <!-- Configura a largura da tela e o zoom inicial para garantir que a página seja responsiva em dispositivos móveis. -->
+    <title>Artes Marciais</title> <!-- Define o título da página que aparece na aba do navegador. -->
+    <!-- Box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css"> <!-- responsivo  implementada no CSS --> <!-- É usada para vincular uma folha de estilo externa, que contém regras CSS para estilizar a página. -->
+</head>
+<body> <!-- Define a seção principal com o conteúdo visível da página web -->
+    <header>
+        <div class="nav container"> <!-- responsivo -->
+            <a href="#" class="logo">Blog <span>Isaac Ikawa</span></a>
+            <a href="#" class="login">inscrever-se</a>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">Artes Marciais</h2> <!-- Título da página principal -->
+            <span class="home-subtitle">"Nas artes marciais, descobrimos a verdadeira essência de viver com honra e respeito."</span> <!-- Frase -->
+        </div>
+    </section>
+
+    <section class="about container" id="about">
+        <div class="contentBx">
+            <h2 class="titleText">Sobre o autor</h2> <!-- Nome do autor -->
+            <p class="title-text"> <!-- Biografia do Isaac Ikawa -->
+                Isaac Ikawa é um praticante dedicado das artes marciais, conhecido por não se limitar a uma única arte marcial ou tradição e por sua paixão pela cultura japonesa. Ele combina técnicas de Kendo, a arte da espada, com o Kali das Filipinas, onde escolheu os bastões duplos, criando um estilo de luta único e eficaz. Além disso, ele é um defensor apaixonado da preservação das artes marciais tradicionais.
+            </p>
+            <a href="#" class="btn2">Leia mais</a>
+        </div>
+        <div class="imgBx">
+            <img src="images/about.png" alt="" class="fitBg">
+        </div>
+    </section>
+
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="tudo">Tudo</span> <!-- Todo o conteúdo -->
+        <span class="filter-item" data-filter="samurai">Samurai</span> <!-- Conteúdo sobre Samurai -->
+        <span class="filter-item" data-filter="kendo">Kendo</span> <!-- Conteúdo sobre Kendo -->
+        <span class="filter-item" data-filter="armas">Armas</span> <!-- Conteúdo sobre armas de artes marciais -->
+    </div>
+    
+    <div class="post container">
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+        <!-- Post 1 -->
+        <!-- Assunto sobre Samurai --> <!-- Origem dos Samurais-->
+        <div class="post-box samurai">
+            <img src="images/img1.png" alt="" class="post-img">
+            <h2 class="category">Samurai</h2>
+            <a href="#" class="post-title">A Origem dos Samurais</a> <!-- Título -->
+            <span class="post-date">26/01/2025</span> <!--- Data no formato do Brasil -->
+            <p class="post-description">Os samurais surgiram no Japão durante o período Heian, inicialmente como guardas de propriedades feudais. Com o tempo, se transformaram em uma classe militar dominante, especialmente após a Guerra Genpei e a fundação do shogunato Kamakura. Sua cultura, marcada pelo código Bushido, influenciou profundamente a sociedade japonesa.</p> <!-- Texto -->
+            <div class="profile">
+                <img src="images/isaacikawa.png" alt="" class="profile-img">
+                <span class="profile-name">Isaac Ikawa</span> <!-- Nome do autor que escreveu -->
+            </div>
+        </div>
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+        <!-- Post 2 -->
+        <!-- Assunto sobre Kendo --> <!-- Sobre o Kendo -->
+        <div class="post-box kendo">
+            <img src="images/img2.png" alt="" class="post-img">
+            <h2 class="category">Kendo</h2>
+            <a href="#" class="post-title">Kendo "caminho da espada"</a>
+            <span class="post-date">26/01/2025</span>
+            <p class="post-description">Kendo desenvolveu-se a partir das técnicas de combate dos antigos samurais, conhecidas como kenjutsu, que se focavam no uso de espadas reais. Com o tempo, para praticar de forma segura, foram introduzidas espadas de bambu (shinai) e armaduras protetoras (bōgu). No final do século XIX, o kendo começou a se formalizar como uma disciplina esportiva e educativa, destacando-se durante o período Meiji como parte da educação física nas escolas japonesas. Após a Segunda Guerra Mundial, o Kendo foi temporariamente proibido e, posteriormente, reintroduzido com foco em valores educacionais e esportivos, separando-se de sua associação militar.</p> <!-- Texto -->
+            <div class="profile">
+                <img src="images/isaacikawa.png" alt="" class="profile-img">
+                <span class="profile-name">Isaac Ikawa</span>
+            </div>
+        </div>
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+        <!-- Post 3 -->
+        <!-- Assunto sobre Kendo --> <!-- equipamentos do Kendo -->        
+        <div class="post-box kendo">
+            <img src="images/img3.png" alt="" class="post-img">
+            <h2 class="category">Kendo</h2>
+            <a href="#" class="post-title">Equipamentos de Kendo</a>
+            <span class="post-date">26/01/2025</span>
+            <p class="post-description">Materiais de Kendo: Hakama: Uma calça larga tradicional japonesa usada sobre o keikogi (uniforme de treino), Keikogi  ou (Kendo-gi): Um uniforme semelhante a um kimono, Shinai: Uma espada feita de bambu, usada para golpear. É flexível e segura para treinamento e competição, Bōgu: Composto por vários elementos de proteção: Men: Máscara para proteger a cabeça e o rosto, Kote: Luvas para proteger as mãos e os antebraços, Dō: Protetor de torso ou peito, Tare: Uma saia de proteção para as coxas.</p>
+            <div class="profile">
+                <img src="images/isaacikawa.png" alt="" class="profile-img">
+                <span class="profile-name">Isaac Ikawa</span>
+            </div>
+        </div>
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+        <!-- Post 4 -->
+        <!-- Assunto sobre armas --> <!-- Armas do Kobudo -->
+        <div class="post-box armas">
+            <img src="images/img4.png" alt="" class="post-img">
+            <h2 class="category">Armas</h2>
+            <a href="#" class="post-title">Armas do Kobudo</a>
+            <span class="post-date">27/01/2025</span>
+            <p class="post-description">O kobudō originou-se em Okinawa, Japão, como uma forma de autodefesa usando ferramentas agrícolas e de pesca devido às restrições de armas durante o domínio feudal. As armas do Kobudo: Bō: Bastão longo, Sai: Tridente de metal, Tonfa: Cassetete com alça, Nunchaku: Duas varetas conectadas, Kama: Foice, Eku: Remo, Tinbe e Rochin: Escudo e lança curta, Suruchin: Corda com pesos, Kuwa: Enxada, Tekko: Armadura de mão, Nunti Bo: Bastão com lança, Sansetsukon: Três varetas conectadas, Jitte: Bastão com gancho, Manji Sai: Sai com extensões laterais.</p>
+            <div class="profile">
+                <img src="images/isaacikawa.png" alt="" class="profile-img">
+                <span class="profile-name">Isaac Ikawa</span>
+            </div>
+        </div>
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+        <!-- Post 5 -->
+        <!-- Assunto sobre Samurai --> <!-- Coque Samurai -->
+        <div class="post-box samurai">
+            <img src="images/img5.png" alt="" class="post-img">
+            <h2 class="category">Samurai</h2>
+            <a href="#" class="post-title">A origem do coque samurai</a>
+            <span class="post-date">31/01/25</span>
+            <p class="post-description">O Coque Samurai, também conhecido como "man bun", é um penteado que tem suas raízes na cultura japonesa, especificamente no "período Edo" (séculos XVII, XVIII e XIX), quando era usado pelos samurais como parte de seu estilo da época. Os samurais prendiam o cabelo na forma de coque, facilitando o uso do capacete durante as batalhas.</p>
+            <div class="profile">
+                <img src="images/isaacikawa.png" alt="" class="profile-img">
+                <span class="profile-name">Isaac Ikawa</span>
+            </div>
+        </div>
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+        
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+        <!-- Post 6 -->
+        <!-- Assunto sobre armas--> <!-- Bastões de Kali -->
+        <div class="post-box armas">
+            <img src="images/img6.png" alt="" class="post-img">
+            <h2 class="category">Armas</h2>
+            <a href="#" class="post-title">Bastões de Kali</a>
+            <span class="post-date">04/02/25</span>
+            <p class="post-description">Os bastões de Kali são armas tradicionais das artes marciais filipinas. Utilizados tanto em combate quanto em treino, desenvolvem coordenação, agilidade e técnicas de autodefesa. O Kali inclui práticas com um bastão ou dois bastões.</p>
+            <div class="profile">
+                <img src="images/isaacikawa.png" alt="" class="profile-img">
+                <span class="profile-name">Isaac Ikawa</span>
+            </div>
+        </div>
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+        <!-- Post 7 --> <!-- Religiões dos Samurais -->
+        <div class="post-box samurai">
+            <img src="images/img7.png" alt="" class="post-img">
+            <h2 class="category">Samurai</h2>
+            <a href="#" class="post-title">Religiões dos Samurais</a>
+            <span class="post-date">04/02/25</span>
+            <p class="post-description">Alguns samurais eram religiosos, sendo muitos deles xintoístas ou budistas. Nos primórdios, alguns samurais eram confucionistas. Com o passar do tempo, devido à influência e domínio dos portugueses no Japão, alguns samurais se converteram ao cristianismo.</p>
+            <div class="profile">
+                <img src="images/isaacikawa.png" alt="" class="profile-img">
+                <span class="profile-name">Isaac Ikawa</span>
+            </div>
+        </div>
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+        <!-- Post 8 --> <!-- Katana -->
+        <div class="post-box armas">
+            <img src="images/img8.png" alt="" class="post-img">
+            <h2 class="category">Armas</h2>
+            <a href="#" class="post-title">Katana</a>
+            <span class="post-date">04/02/25</span>
+            <p class="post-description">As katanas eram curvadas e feitas de aço. O aço era trabalhado por ferreiros especialistas que controlavam minuciosamente o carbono contido nas lâminas para maior força e flexibilidade. Por esse motivo, se diz que as espadas japonesas estavam entre as mais finas e afiadas produzidas no mundo medieval. As lâminas variavam em comprimento, mas se tornou comum para a elite samurai carregar duas espadas: uma longa e outra curta.</p>
+            <div class="profile">
+                <img src="images/isaacikawa.png" alt="" class="profile-img">
+                <span class="profile-name">Isaac Ikawa</span>
+            </div>
+        </div>
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+        
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+        <!-- Post 9 --> <!-- Shinais -->
+        <div class="post-box kendo">
+            <img src="images/img9.png" alt="" class="post-img">
+            <h2 class="category">Kendo</h2>
+            <a href="#" class="post-title">Tipos de shinais</a>
+            <span class="post-date">04/02/25</span>
+            <p class="post-description">Shinai Tradicional: treinos de Kendo, Shinai Dobari:  peso concentrado mais próximo ao cabo, proporcionando uma maior sensação de leveza na subida, Shinai DOBARI Korean: As dobaris coreanas são mais robustas na região perto do cabo, concentrando seu centro de gravidade mais próximo do Grip. Ela oferece leveza extrema e agilidade nos golpes, Shinai Jissengata: Com um balanço preciso e correto, ele é ideal para treinos e competições de alta performance, Shinai Smoked: é uma shinai de sensação de muita leveza e durabilidade, a preparação desse shinai, suas varetas de bambu passam por um processo de desidratação por defumação, aumentando sua durabilidade, Shinai Koto: Montada apenas por artesãos mais experientes, As shinais kotos tem como característica ter o peso mais direcionado na ponta, distante do grip, oferecendo uma decida rápida, Shinai Carbono DOBARI: Uma shinai de alta tecnologia Japonesa, com peso mais focado no Tsuka (cabo), para atletas que gostam de leveza e agilidade nos treinos, Suburito: Para treino, auxilia no fortalecimento da musculatura e correção de postura. Ótima para treinos em apartamento.</p>
+            <div class="profile">
+                <img src="images/isaacikawa.png" alt="" class="profile-img">
+                <span class="profile-name">Isaac Ikawa</span>
+            </div>
+        </div>
+        <!-- ........................................................................................................................................................................................................................................................................................... -->
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="sec aboutus">
+                <h2>Sobre Nós</h2>
+                <p>Bem-vindo ao meu blog de artes marciais! Desde 2025, venho explorando e compartilhando histórias e tradições culturais com integridade e excelência.</p>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/profile.php?id=100081034457287"><i class="bx bxl-facebook"></i></a></li> <!-- authwall - parede de autenticação: é uma barreira que exige login para acessar conteúdo. --> <!-- mecanismo de segurança para restringir o acesso -->
+                    <li><a href="https://www.instagram.com/isaac_ikawa/"><i class="bx bxl-instagram"></i></a></li>                 <!-- authwall -->
+                    <li><a href="https://x.com/isaac_ikawa"><i class="bx bxl-twitter"></i></a></li>                                <!-- authwall -->
+                    <li><a href="https://www.linkedin.com/in/isaac-ikawa/"><i class="bx bxl-linkedin"></i></a></li>                <!-- authwall -->
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Links Rápidos</h2> <!-- Facilitar a navegação e o acesso a seções. -->
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="sec contactBx">
+                <h2>Contato</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class='bx bxs-map'></i></span>
+                        <span>São Paulo <br> Brasil</span> <!-- Endereço -->
+                    </li>
+                    <li>
+                        <span><i class='bx bx-envelope' ></i></span>
+                        <p><a href="mailto:isaacikawa1@outlook.com">isaacikawa1@outlook.com</a></p> <!-- mailto: é um protocolo que cria links para abrir clientes de e-mail com destinatário pré-definido. --> <!-- e-mail profissonal, a estrutura do seu e-mail precisa ter o seu primeiro nome e o seu sobrenome. -->
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- © copyright -->
+        <div class="copyright">
+            <p>&copy; 2025 Desenvolvido por Isaac Ikawa. Todos os direitos reservados. | <a href="privacidade.html">Política de Privacidade</a> | <a href="termos.html">Termos de Uso</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script> <!-- Inclui e executa um arquivo JavaScript externo na página web. -->
+</body>
+</html>
